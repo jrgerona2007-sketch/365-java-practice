@@ -1,0 +1,18 @@
+public class Arrays1 {
+    public static void main (String[] args) {
+        //[1, 2, 3, 4] → true
+       //[1, 2, 2, 3] → false
+       //Return true if every next number is greater than the previous.
+
+       int [] arr = {1,8,5,9};
+
+       for (int x = 0; x<arr.length; x++){
+       for (int y = x +1; y<arr.length; y++){
+        if (arr[x]>= arr[y]){
+            System.out.print("False");
+            return;
+        }
+       } 
+    }  System.out.print("True");
+    }
+}
